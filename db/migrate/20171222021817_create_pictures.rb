@@ -3,7 +3,6 @@ class CreatePictures < ActiveRecord::Migration[5.1]
     create_table :pictures do |t|
       t.references :trip, foreign_key: true
       t.references :user, foreign_key: true
-      t.boolean :reported, null: false
       t.timestamps
     end
   end
